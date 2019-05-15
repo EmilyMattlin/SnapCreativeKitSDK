@@ -17,32 +17,20 @@ class ViewController: UIViewController {
         
     }
 
-
+//Uses photo in assets folder and opens snapchat to send the photo
     @IBAction func tester(_ sender: Any, forEvent event: UIEvent) {
-        print("Hello world")
         let imageName = "yourImage.png"
         let image = UIImage(named: imageName)
         let photo = SCSDKSnapPhoto(image: image!)
         let photoContent = SCSDKPhotoSnapContent(snapPhoto: photo)
         let api = SCSDKSnapAPI(content: photoContent)
-//        api.startSnapping(completionHandler: { (error: Error?) in
-//            /* Do something */
-//        })
-        api.startSnapping() { [weak self] (error: Error?) in
-            self?.view.isUserInteractionEnabled = true
-            // Handle response
+        api.startSnapping() { (error: Error?) in
+            print("Sharing pic to snapchat")
+            // Handle responseprint("Sharing pic to snapchat")
         }
 
     }
     
-    @IBAction func alerted() {
-        let alert = UIAlertController(title: "My Alert", message: "This is an alert.", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
-            NSLog("The \"OK\" alert occured.")
-        }))
-        self.present(alert, animated: true, completion: nil)
-
-    }
     
 }
 

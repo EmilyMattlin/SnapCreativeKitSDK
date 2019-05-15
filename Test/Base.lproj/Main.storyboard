@@ -18,18 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vvs-D9-3OQ">
-                                <rect key="frame" x="129" y="433" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="alert"/>
-                                <connections>
-                                    <action selector="alerted" destination="BYZ-38-t0r" eventType="touchUpInside" id="kqh-aC-rZy"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdG-XO-U7U">
-                                <rect key="frame" x="214" y="262" width="30" height="30"/>
+                                <rect key="frame" x="145" y="264" width="124" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="test"/>
+                                <state key="normal" title="Send an image"/>
                                 <connections>
                                     <action selector="tester:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eAu-Yr-4eq"/>
                                 </connections>
