@@ -40,7 +40,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>SCSDKClientId</key>
-	<string>02587b81-7690-4e39-aa85-7134461a0c28</string>
+	<string>[CLIENT ID from the Development Environment portion of your registration application]</string>
 	<key>SCSDKRedirectUrl</key>
 	<string>http://www.example.com/</string>
 	<key>SCSDKScopes</key>
